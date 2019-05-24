@@ -9,7 +9,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://danilosh45:modobiju13@loca
 #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db = SQLAlchemy(app)
-heroku = Heroku(app)
+#heroku = Heroku(app)
 
 class Blogpost(db.Model):
     id = db.Column(db.Integer, primary_key=True)
