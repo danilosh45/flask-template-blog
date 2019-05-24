@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-from flask.ext.heroku import Heroku
+#from flask.ext.heroku import Heroku
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://danilosh45:modobiju13@localhost/batman'
 #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
