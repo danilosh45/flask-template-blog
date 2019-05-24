@@ -6,7 +6,7 @@ from datetime import datetime
 app = Flask(__name__)
 #from flask.ext.heroku import Heroku
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://danilosh45:modobiju13@localhost/batman'
-#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 #heroku = Heroku(app)
