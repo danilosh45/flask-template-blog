@@ -1,5 +1,4 @@
 #!/Users/danilosh45/Projects/flask-template-blog/flaskv/bin/python3
-
 # -*- coding: utf-8 -*-
 import re
 import sys

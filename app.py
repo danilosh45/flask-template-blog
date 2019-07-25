@@ -1,13 +1,16 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for
+from flask_uploads import UploadSet, configure_uploads, IMAGES
 
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
 #from flask.ext.heroku import Heroku
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://danilosh45:modobiju13@localhost:5432/batman'
+
 
 db = SQLAlchemy(app)
 #heroku = Heroku(app)
